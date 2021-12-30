@@ -55,7 +55,7 @@ func (fe Fe) OpenFile(filepath string) {
 	extension := slices[len(slices)-1]
 	quick.Highlight(os.Stdout, string(content), extension, "terminal256", "monokai")
 	fe.Open(path.Dir(filepath), false)
-}
+} 
 
 func (fe Fe) Open(filepath string, cls bool) {
 	if cls {
